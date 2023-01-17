@@ -24,4 +24,3 @@ const AboutView = () => {
 
 export default AboutView;
 
-//<h2>About us</h2>-it was under the <Hero text... />
