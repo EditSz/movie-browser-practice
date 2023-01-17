@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import Navbar from './component/Navbar';
@@ -41,43 +40,11 @@ function App() {
 
         <Route path='*' element={<PageNotFound />}/>
 
-      
       </Routes>
     </div>
-
-      /* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */
-    
+  
   );
 }
 
 export default App;
 
-//the SearchView didn't work as in the lesson because of the changes in React!!!
-//you have to use the element={<Something>} method
-
-/*console.log(searchText, "is the default")
-setTimeout(() => {
-  setSearchText("New text")
-  console.log(searchText, "is the new text")
-}, 2000)*/
-
-
-/*<Route path="/search" keyword={searchText}  searchResults={searchResults}  element={<SearchView/>}>- doesn't work, it's just wrong in this form*/
-
-//it was in the useEffect section -  console.log(searchText, "is the search text")
-
-
-//  <Route path="/*" element={<PageView/>} />
