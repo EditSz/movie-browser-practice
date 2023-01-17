@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 const MovieView = () => {
     const {id} = useParams()
-    //console.log(id)
     const [movieDetails, setMovieDetails] = useState({})
     const [isLoading, setIsLoading] = useState(true)
     const posterPath = `https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`
@@ -38,15 +37,14 @@ const MovieView = () => {
         }
       }
 
+      
     function renderMovieDetails() {
       if (isLoading) {
         return <Hero text="Loading..." />
       }
       if(movieDetails == null) {
-
         return <img src={pageNotFound} className="col-md-7 img-fluid shadow rounded" alt="not_found" />
       }else{
-        //TOTO: deal with a possible missing image
         return (
           <>
             <Hero text={movieDetails.original_title}  backdrop={backdropUrl}/>
@@ -69,10 +67,3 @@ const MovieView = () => {
 
 export default MovieView;
 
-//it was under useEffect -  console.log('make an api request', id)
-
-/*<div className="col-md-3">
-<img src={posterPath} alt={movieDetails.original_title} className="img-fluid shadow rounded"/>
-</div>
-
-//<div className="row">*/
