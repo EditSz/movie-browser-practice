@@ -46,7 +46,6 @@ const MovieView = () => {
 
         return <img src={pageNotFound} className="col-md-7 img-fluid shadow rounded" alt="not_found" />
       }else{
-        //TOTO: deal with a possible missing image
         return (
           <>
             <Hero text={movieDetails.original_title}  backdrop={backdropUrl}/>
@@ -69,10 +68,3 @@ const MovieView = () => {
 
 export default MovieView;
 
-//it was under useEffect -  console.log('make an api request', id)
-
-/*<div className="col-md-3">
-<img src={posterPath} alt={movieDetails.original_title} className="img-fluid shadow rounded"/>
-</div>
-
-//<div className="row">*/
