@@ -2,12 +2,11 @@ import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = ({searchText, setSearchText}) => {
-  //const navigate = useNavigate()
+  
 
   const [updated, setUpdated] = useState("")
 
   const updateSearchText = (e) => {
-    //navigate('/search')
     setSearchText(e.target.value)
   }
 
@@ -64,6 +63,3 @@ export default Navbar;
 
 
 
-//it was above the setSearchText(e.target.value)!! - console.log(e.target.value)
-
-//useHistory, history.push is an old method- we use instead useNavigate, navigate()!!
