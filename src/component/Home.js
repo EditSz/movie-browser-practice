@@ -19,4 +19,4 @@ const Home = () => {
 
 export default Home;
 
-//<h1>Hello world from React 201 </h1> -it was under the <Hero text... />!
+
