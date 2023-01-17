@@ -15,7 +15,6 @@ const MovieCard = ({movie}) => {
         <Link to={detailUrl} className="btn btn-primary">Show details</Link>
     </div>
   </div>
-
   )
 }
 
@@ -26,7 +25,6 @@ const SearchView = ({keyword, searchResults}) => {
   const PageNotFound = require('./404 yoda.png')
   const resultsHtml = searchResults.map((obj, i) =>{
     return <MovieCard movie={obj} key={i} />
-  
   })
  
 
@@ -36,9 +34,7 @@ const SearchView = ({keyword, searchResults}) => {
       <Hero text={title} />
       {resultsHtml &&
         <div className="container-details ">
-          
             {resultsHtml}
-         
         </div>
       }
 
@@ -53,6 +49,3 @@ const SearchView = ({keyword, searchResults}) => {
 export default SearchView;
 
 
-//it was under the const title =... -  console.log(searchResults, "are the search results")
-
-//it was in const resultHtml - <div key={i}>{obj.original_title}</div>
